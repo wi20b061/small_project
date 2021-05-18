@@ -17,7 +17,7 @@ public class SampleController {
         return "sample" + counter;
     }
     //funktioniert iwie nicht
-    @POST
+    @GET
     @Path("/{delta}")
     @Produces(MediaType.TEXT_PLAIN)
     public String SampleMethodWithDelta(@PathParam("delta") int delta){
